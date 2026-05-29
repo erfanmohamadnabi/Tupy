@@ -580,7 +580,7 @@ input[type="text"]:focus {
 @font-face {
   font-family: "Yekan";
 
-  src: local("Yekan"),url(/public/fonts/IRANYekanLight.ttf);
+  src: local("Yekan"),url(../fonts/IRANYekanLight.ttf);
 
   font-display: swap;
 }
@@ -588,7 +588,7 @@ input[type="text"]:focus {
 @font-face {
   font-family: "Yekan Medium";
 
-  src: local("Yekan"),url(/public/fonts/IRANYekanMedium.ttf);
+  src: local("Yekan"),url(../fonts/IRANYekanMedium.ttf);
 
   font-display: swap;
 }
@@ -596,7 +596,7 @@ input[type="text"]:focus {
 @font-face {
   font-family: "Yekan Bold";
 
-  src: local("Yekan"),url(/public/fonts/IRANYekanBold.ttf);
+  src: local("Yekan"),url(../fonts/IRANYekanBold.ttf);
 
   font-display: swap;
 }
@@ -604,7 +604,7 @@ input[type="text"]:focus {
 @font-face {
   font-family: "Yekan ExtraBold";
 
-  src: local("Yekan"),url(/public/fonts/IRANYekanExtraBold.ttf);
+  src: local("Yekan"),url(../fonts/IRANYekanExtraBold.ttf);
 
   font-display: swap;
 }
@@ -612,7 +612,7 @@ input[type="text"]:focus {
 @font-face {
   font-family: "Yekan Regular";
 
-  src: local("Yekan"),url(/public/fonts/IRANYekanRegular.ttf);
+  src: local("Yekan"),url(../fonts/IRANYekanRegular.ttf);
 
   font-display: swap;
 }
@@ -620,7 +620,7 @@ input[type="text"]:focus {
 @font-face {
   font-family: "Yekan Light";
 
-  src: local("Yekan"),url(/public/fonts/IRANYekanLight.ttf);
+  src: local("Yekan"),url(../fonts/IRANYekanLight.ttf);
 
   font-display: swap;
 }
