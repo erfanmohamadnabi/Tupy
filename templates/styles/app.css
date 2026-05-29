@@ -1683,7 +1683,7 @@ input[type="text"]:focus {
 /* Video Cover */
 
 .about-video {
-  background-image: url("/public/img/1658830323-S6js.jpg");
+  background-image: url("../img/1658830323-S6js.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
