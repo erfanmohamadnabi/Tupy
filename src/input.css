@@ -28,37 +28,37 @@
 
     @font-face {
     font-family: "Yekan";
-    src: local("Yekan"),url(/public/fonts/IRANYekanLight.ttf);
+    src: local("Yekan"),url(../fonts/IRANYekanLight.ttf);
     font-display: swap;
     }
 
     @font-face {
     font-family: "Yekan Medium";
-    src: local("Yekan"),url(/public/fonts/IRANYekanMedium.ttf);
+    src: local("Yekan"),url(../fonts/IRANYekanMedium.ttf);
     font-display: swap;
     }
 
     @font-face {
     font-family: "Yekan Bold";
-    src: local("Yekan"),url(/public/fonts/IRANYekanBold.ttf);
+    src: local("Yekan"),url(../fonts/IRANYekanBold.ttf);
     font-display: swap;
     }
 
     @font-face {
     font-family: "Yekan ExtraBold";
-    src: local("Yekan"),url(/public/fonts/IRANYekanExtraBold.ttf);
+    src: local("Yekan"),url(../fonts/IRANYekanExtraBold.ttf);
     font-display: swap;
     }
 
     @font-face {
     font-family: "Yekan Regular";
-    src: local("Yekan"),url(/public/fonts/IRANYekanRegular.ttf);
+    src: local("Yekan"),url(../fonts/IRANYekanRegular.ttf);
     font-display: swap;
     }
 
     @font-face {
     font-family: "Yekan Light";
-    src: local("Yekan"),url(/public/fonts/IRANYekanLight.ttf);
+    src: local("Yekan"),url(../fonts/IRANYekanLight.ttf);
     font-display: swap;
     }
     
@@ -128,7 +128,7 @@
     /* Video Cover */
 
     .about-video {
-        background-image: url("/public/img/1658830323-S6js.jpg");
+        background-image: url("../img/1658830323-S6js.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
