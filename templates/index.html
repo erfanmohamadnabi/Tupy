@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tupy</title>
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body class="bg-bg-body">
+
+
+    <!-- Icons -->
+
+    <svg class="hidden">
+
+        <symbol id="close" 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="30" 
+            height="30" 
+            viewBox="0 0 24 24" 
+            fill="none"
+            stroke="currentColor" 
+            stroke-width="2" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"
+        >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </symbol>
+        
+    </svg>
+
+
+    <!-- Overflow -->
+
+    <div class="overflow hidden fixed w-full h-full bg-black/75 z-10 top-0"></div>
+    
+ 
+    <!-- Header -->
+
+    <header class="mt-[70px] laptop:mt-3 h-20  flex items-center justify-between">
+
+        <!-- Logo -->
+
+        <div class="logo h-full flex items-center justify-end">
+            <img class="w-44 ml-17 laptop:ml-5 laptop:w-28" src="./img/TUPY LOGO.png" alt="logo">
+        </div>
+
+        <!-- Menu bar -->
+
+        <div>
+            <div class="menu h-full flex items-center justify-end laptop:hidden">
+
+            <ul class="mr-17 flex flex-row-reverse justify-center items-center gap-[60px] child:text-[29px] child:font-YekanBold child:text-white 2xl:gap-8 2xl:child:text-2xl desktop:gap-4 desktop:child:text-[20px]">
+                <li class="active">
+                    <a href="">
+                        خانه
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        لیست نمایندگان
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        استانداردها
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        لیست قیمت
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        محصولات
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        ویدیوها
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        درباره توپی
+                    </a>
+                </li>
+            </ul>
+
+            </div>
+
+            <!-- Mobile Menu Open Btn -->
+
+            <div class="mobile-menu-btn mr-5 hidden laptop:block"></div>
+        </div>
+
+        <!-- Mobile Menu bar -->
+
+        <div class="mobile-menu transition-all bg-bg-body px-5">
+
+            <div class="h-20 flex justify-between items-center">
+                <div class="w-[90%] h-full flex items-center justify-start">
+                    <img class="w-28" src="./img/TUPY LOGO.png" alt="">
+                </div>
+                <div>
+                    <svg class="mobile-menu-close w-7 h-7 text-white">
+                        <use href="#close"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <ul class="flex items-center justify-center flex-col text-white font-YekanRegular w-full">
+    
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">خانه</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">لیست نمایندگان</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">استانداردها</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">لیست قیمت</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">محصولات</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">ویدیوها</a>
+                    </li>
+
+                    <li class="w-full text-center py-6">
+                        <a href="">درباره توپی</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Banner -->
+
+    <section>
+        <div class="relative">
+
+            <!-- Banner Shapes -->
+
+            <img class="absolute top-0 left-[1.5%] mobile:w-[70px]" src="./img/banner/پرچم برزیل.png" alt="">
+            <img class="absolute tablet:hidden w-[370px] desktop:w-[300px] laptop:w-[250px] top-0 left-[10%] 2xl:left-[13%] desktop:left-[17%] laptop:left-[23%]" src="./img/banner/triangle design.png" alt="">
+
+            <div class="container flex laptop:flex-col items-center justify-between mt-5">
+
+                <div class="w-[45%] laptop:w-full h-[700px] desktop:h-[700px] tablet:h-[500px] mobile:h-[250px] flex items-end justify-start laptop:justify-center laptop:items-center px-14 desktop:px-5">
+                    <img class="w-[660px]" src="./img/banner/اتصالات روی بنر.png" alt="">
+                </div>
+
+                <div dir="rtl" class="w-[55%] laptop:w-full h-[700px] desktop:h-[700px] mobile:h-full mobile:my-6 flex flex-col items-start justify-between pt-14 laptop:pt-0 tablet:pt-0 mobile:p-0 mobile:items-center mobile:justify-center">
+                  
+                    <div class="desktop-text mobile:hidden">
+                        <h1 class="text-[70pt] 3xl:text-6xl 3xl:leading-[80px] desktop:text-5xl desktop:leading-[70px] laptop:text-6xl laptop:leading-[70px] tablet:text-5xl tablet:leading-[60px] mobile:text-[20px] text-white font-YekanExtraBold">اتصالاتی که  <br> <span class="text-[#6ecff6]">ایمنی</span> را <span class="text-[#6ecff6]">تضمین</span> می‌کند </h1>
+
+                        <hr class="w-[30%] bg-[#6ecff6] h-1 my-5">
+
+                        <p class="font-YekanRegular text-white text-[38px] desktop:text-[24px] laptop:text-[30px] mobile:text-xl">ﺗﻨﻬﺎ اﺗﺼﺎﻻت <br> دﻧﺪه‌ای دارای ﮔﺎراﻧﺘﯽ در اﯾﺮان</p>
+                    </div>
+
+                    <div class="mobile-text hidden mobile:flex flex-col items-center justify-center">
+                        <h1 class="font-YekanExtraBold text-white text-[22px]">اتصالاتی که <span class="text-[#6ecff6]">ایمنی</span> را <span class="text-[#6ecff6]">تضمین</span> می‌کند </h1>
+
+                        <hr class="w-[30%] mobile:w-full bg-[#6ecff6] h-1 my-5">
+
+                        <p class="font-YekanRegular text-white">ﺗﻨﻬﺎ اﺗﺼﺎﻻت  دﻧﺪه‌ای دارای ﮔﺎراﻧﺘﯽ در اﯾﺮان</p>
+                    </div>
+
+                    <div class="flex mobile:items-center mobile:justify-between mobile:w-full desktop:flex-wrap mobile:flex-nowrap my-5 gap-3 text-white">
+                        <div class="w-48 mobile:w-1/3 h-20 flex items-center justify-start gap-2">
+                            <img class="w-20 mobile:w-8" src="./img/banner/CONECTION ICON.png" alt="">
+                            <p class="text-[14px] mobile:text-[7px] font-YekanRegular">کیفیت <br>  قابل اعتماد</p>
+                        </div>
+                        <div class="w-48 mobile:w-1/3 h-20 flex items-center justify-start gap-2">
+                            <img class="w-20 mobile:w-8" src="./img/banner/GEAR ICON.png" alt="">
+                            <p class="text-[14px] mobile:text-[7px] font-YekanRegular">طراحی  <br> مهندسی شده</p>
+                        </div>
+                        <div class="w-48 mobile:w-1/3 h-20 flex items-center justify-start gap-2">
+                            <img class="w-20 mobile:w-8" src="./img/banner/CONECTION ICON.png" alt="">
+                            <p class="text-[14px] mobile:text-[7px] font-YekanRegular">طول عمر و  <br> مقاومت بسیار بالا</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full grid grid-cols-4 3xl:grid-cols-2 mobile:grid-cols-2 gap-3">
+    
+                        <button class="h-20 mobile:h-16 bg-[#549dc6] rounded-lg flex items-center justify-between px-4">
+                            <img src="./img/banner/وکتور روی دکمه دانلود.png" alt="" class="h-8 w-8 mobile:h-5 mobile:w-5 object-contain">
+                            <p class="font-YekanRegular text-right text-white text-sm mobile:text-[9px] leading-5 mobile:leading-4">دانلود کاتالوگ <br> اتصالات TUPYPRES</p>
+                            <img src="./img/banner/وکتور پی دی اف روی دکمه دانلود.png" alt="" class="h-8 w-8 mobile:h-5 mobile:w-5 object-contain">
+                        </button>
+
+                        <button class="h-20 mobile:h-16 bg-[#726252] rounded-lg flex items-center justify-between px-4">
+                            <img src="./img/banner/وکتور روی دکمه دانلود.png" alt="" class="h-8 w-8 mobile:h-5 mobile:w-5 object-contain">
+                            <p class="font-YekanRegular text-right text-white text-sm mobile:text-[9px] leading-5 mobile:leading-4">دانلود کاتالوگ <br> اتصالات TUPY BSP</p>
+                            <img src="./img/banner/وکتور پی دی اف روی دکمه دانلود.png" alt="" class="h-8 w-8 mobile:h-5 mobile:w-5 object-contain">
+                        </button>
+
+                        <button class="h-20 mobile:h-16 bg-[#549dc6] rounded-lg flex items-center justify-between px-4">
+                            <img src="./img/banner/وکتور روی دکمه دانلود.png" alt="" class="h-8 w-8 mobile:h-5 mobile:w-5 object-contain">
+                            <p class="font-YekanRegular text-right text-white text-sm mobile:text-[9px] leading-5 mobile:leading-4">دانلود کاتالوگ <br> اتصالات TUPY NPT</p>
+                            <img src="./img/banner/وکتور پی دی اف روی دکمه دانلود.png" alt="" class="h-8 w-8 mobile:h-5 mobile:w-5 object-contain">
+                        </button>
+
+                        <button class="h-20 mobile:h-16 bg-[#549dc6] rounded-lg flex items-center justify-between px-4">
+                            <img src="./img/banner/وکتور روی دکمه دانلود.png" alt="" class="h-8 w-8 mobile:h-5 mobile:w-5 object-contain">
+                            <p class="font-YekanRegular text-right text-white text-sm mobile:text-[9px] leading-5 mobile:leading-4">لیست قیمت</p>
+                            <img src="./img/banner/وکتور پی دی اف روی دکمه دانلود.png" alt="" class="h-8 w-8 mobile:h-5 mobile:w-5 object-contain">
+                        </button>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <!-- Slider Catalog -->
+
+    <section class="py-10 px-4 tablet:px-0 my-9 relative mobile:my-0 mobile:py-5">
+
+        <div class="section-title h-20 flex flex-col items-center justify-center mb-8">
+            <h2 class="font-YekanBold text-3xl text-white relative inline-block pb-1">
+                محصولات
+                <span class="absolute -bottom-1 left-0 w-full h-[3px] bg-[#347eff]"></span>
+            </h2>
+        </div>
+
+        <div class="shape absolute top-0 -z-10">
+            <img src="./img/shape1.png" alt="">
+        </div>
+
+        <div class="slider-catalog w-full ">
+            <div class="container slider-container p-0 relative mx-auto">
+                <div class="overflow-hidden rounded-2xl">
+                    <div class="slider-track flex justify-between gap-3 transition-transform duration-500">
+
+
+                        <!-- Slides -->
+
+                        <div class="slide-card bg-[#061b3e] 2xl:w-[49.5%] laptop:w-[49%] tablet:w-[99%] laptop:h-[500px] w-[32.8%] h-[310px] border-[#347eff] border-[2px] rounded-2xl flex laptop:flex-col tablet:flex-row tablet:h-[210px] tablet:border-0 tablet:bg-transparent justify-between flex-shrink-0">
+                            
+                            <div class="image-catalog h-full flex items-center justify-center ml-8">
+                                <div class="flex items-center justify-center h-full pt-7 rounded-2xl w-full ">
+                                    <img class="object-cover w-full laptop:w-[200px] tablet:w-[150px]   rounded-2xl" src="./img/BSP.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="flex items-start justify-center h-full">
+                                <div class="flex flex-col justify-between items-end h-full">
+                                    <div dir="rtl" class="flex flex-col justify-start gap-2 mt-9 laptop:mt-0 tablet:mt-9 mr-8 w-[257px] desktop:w-[200px] tablet:w-[140px]">
+                                        <h2 class="text-white text-[39px] tablet:text-[22px] font-YekanExtraBold line-clamp-1">TUPYPRES</h2>
+                                        <p class="text-white text-[27px] tablet:text-[15px] font-YekanRegular line-clamp-1 desktop:text-[20px]">اتصالات توپی‌ BSP</p>
+                                        <p class="text-white text-[19px] tablet:text-[10px] font-YekanRegular desktop:text-[15px] line-clamp-2">اتصالات مطابق با استانداردهای رزوه BSP</p>
+                                    </div>
+                                    <div class="h-12 my-5 mr-4 flex tablet:hidden">
+                                        <button class="flex items-center justify-center gap-[18px] w-[237px] h-12 border-[#347eff] border-[4px] rounded-xl">
+                                            <img src="./img/left.png" alt="">
+                                            <p class="text-[19px] font-YekanRegular text-white">مشاهده محصولات</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="slide-card bg-[#061b3e] 2xl:w-[49.5%] laptop:w-[49%] tablet:w-[99%] laptop:h-[500px] w-[32.8%] h-[310px] border-[#347eff] border-[2px] rounded-2xl flex laptop:flex-col tablet:flex-row tablet:h-[210px] tablet:border-0 tablet:bg-transparent justify-between flex-shrink-0">
+                            
+                            <div class="image-catalog h-full flex items-center justify-center ml-8">
+                                <div class="flex items-center justify-center h-full pt-7 rounded-2xl w-full ">
+                                    <img class="object-cover w-full laptop:w-[200px] tablet:w-[150px]   rounded-2xl" src="./img/BSP.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="flex items-start justify-center h-full">
+                                <div class="flex flex-col justify-between items-end h-full">
+                                    <div dir="rtl" class="flex flex-col justify-start gap-2 mt-9 laptop:mt-0 tablet:mt-9 mr-8 w-[257px] desktop:w-[200px] tablet:w-[140px]">
+                                        <h2 class="text-white text-[39px] tablet:text-[22px] font-YekanExtraBold line-clamp-1">TUPYPRES</h2>
+                                        <p class="text-white text-[27px] tablet:text-[15px] font-YekanRegular line-clamp-1 desktop:text-[20px]">اتصالات توپی‌ BSP</p>
+                                        <p class="text-white text-[19px] tablet:text-[10px] font-YekanRegular desktop:text-[15px] line-clamp-2">اتصالات مطابق با استانداردهای رزوه BSP</p>
+                                    </div>
+                                    <div class="h-12 my-5 mr-4 flex tablet:hidden">
+                                        <button class="flex items-center justify-center gap-[18px] w-[237px] h-12 border-[#347eff] border-[4px] rounded-xl">
+                                            <img src="./img/left.png" alt="">
+                                            <p class="text-[19px] font-YekanRegular text-white">مشاهده محصولات</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="slide-card bg-[#061b3e] 2xl:w-[49.5%] laptop:w-[49%] tablet:w-[99%] laptop:h-[500px] w-[32.8%] h-[310px] border-[#347eff] border-[2px] rounded-2xl flex laptop:flex-col tablet:flex-row tablet:h-[210px] tablet:border-0 tablet:bg-transparent justify-between flex-shrink-0">
+                            
+                            <div class="image-catalog h-full flex items-center justify-center ml-8">
+                                <div class="flex items-center justify-center h-full pt-7 rounded-2xl w-full ">
+                                    <img class="object-cover w-full laptop:w-[200px] tablet:w-[150px]   rounded-2xl" src="./img/BSP.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="flex items-start justify-center h-full">
+                                <div class="flex flex-col justify-between items-end h-full">
+                                    <div dir="rtl" class="flex flex-col justify-start gap-2 mt-9 laptop:mt-0 tablet:mt-9 mr-8 w-[257px] desktop:w-[200px] tablet:w-[140px]">
+                                        <h2 class="text-white text-[39px] tablet:text-[22px] font-YekanExtraBold line-clamp-1">TUPYPRES</h2>
+                                        <p class="text-white text-[27px] tablet:text-[15px] font-YekanRegular line-clamp-1 desktop:text-[20px]">اتصالات توپی‌ BSP</p>
+                                        <p class="text-white text-[19px] tablet:text-[10px] font-YekanRegular desktop:text-[15px] line-clamp-2">اتصالات مطابق با استانداردهای رزوه BSP</p>
+                                    </div>
+                                    <div class="h-12 my-5 mr-4 flex tablet:hidden">
+                                        <button class="flex items-center justify-center gap-[18px] w-[237px] h-12 border-[#347eff] border-[4px] rounded-xl">
+                                            <img src="./img/left.png" alt="">
+                                            <p class="text-[19px] font-YekanRegular text-white">مشاهده محصولات</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Mobile Btn -->
+
+                <div class="tablet:flex items-center justify-center p-0 m-0 hidden">
+                    <div class="h-12">
+                        <button class="flex items-center justify-center gap-[18px] w-72 h-[60px] border-[#347eff] border-[2px] rounded-xl">
+                            <img src="./img/left.png" alt="">
+                            <p class="text-[19px] font-YekanRegular text-white">مشاهده محصولات</p>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="slider-dots flex justify-center gap-3 mt-8"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Us -->
+
+
+    <section>
+        <div class="container flex desktop:flex-col">
+
+            <div class="w-1/2 desktop:w-full h-full flex items-center justify-start desktop:my-7">
+                <div class="about-video w-[796px] h-[493px] 3xl:w-[95%] desktop:w-full mobile:h-[300px] rounded-[20px] relative">
+                    <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 cursor-pointer" src="./img/icons/Play-Music-icon.png" alt="play">
+                </div>
+            </div>
+
+            <div class="w-1/2 desktop:w-full h-full flex items-center justify-end">
+                <div dir="rtl" class="flex flex-col tablet:border-2 tablet:border-[#1c5d9f] tablet:p-6 items-center gap-8 mobile:gap-0 w-[880px] h-[493px] 3xl:w-[100%] desktop:w-full desktop:h-full rounded-[20px] text-white">
+
+                    <h2 class="font-YekanBold text-4xl mobile:text-2xl mobile:my-2">درباره توپی</h2>
+                    <p class="font-YekanRegular text-2xl 2xl:text-[20px] desktop:text-[27px] desktop:text-justify desktop:leading-10 mobile:text-[11px]">شرکت توپی یکی از معتبرترین تولیدکنندگان اتصالات صنعتی و دنده‌ای در جهان است که با بیش از ۸۵ سال سابقه، محصولات خود را مطابق استانداردهای بین‌المللی تولید می‌کند. اتصالات توپی به دلیل کیفیت بالا، دوام و تنوع گسترده، در صنایع ساختمان، آتش‌نشانی، نفت و گاز در بسیاری از کشورهای جهان مورد استفاده قرار می‌گیرند.</p>
+
+                    <button class="flex flex-row-reverse tablet:hidden items-center justify-center gap-[18px] w-72 h-[60px] border-[#347eff] border-[4px] rounded-xl">
+                        <img src="./img/left.png" alt="">
+                        <p class="text-[19px] font-YekanRegular text-white">اطلاعات بیشتر درباره ما</p>
+                    </button>
+
+                    <div class="flex w-[890px] h-[187px] mobile:w-[115%] mobile:h-[140px] 3xl:w-[100%] desktop:pt-4 mobile:pt-1 border-4 border-[#1c5d9f] rounded-[19px] tablet:border-none">
+                        
+                        <div class="flex flex-col justify-start gap-3 pt-3 items-center w-1/4 mobile:w-[100%] h-full custom-border [&>*]:leading-none">
+                            <img class="w-14 h-14 3xl:w-10 3xl:h-10 desktop:w-14 desktop:h-14 mobile:w-9 mobile:h-9" src="./img/icons/workers icon.png" alt="worker">
+                            <span class="text-[#6ecff6] font-YekanBold text-[28pt] block h-8 2xl:text-[20pt] 2xl:h-6 mobile:text-[15pt]">۱۹۰۰۰+</span>
+                            <p class="font-YekanRegular text-[15pt] h-6 tablet:text-[8pt] mobile:text-[7pt]">کارمند</p>
+                        </div>
+
+                        
+                        
+                        <div class="flex flex-col justify-start gap-3 pt-3 items-center w-1/4 mobile:w-[100%] h-full custom-border [&>*]:leading-none">
+                            <img class="w-14 h-14 3xl:w-10 3xl:h-10 desktop:w-14 desktop:h-14 mobile:w-9 mobile:h-9" src="./img/icons/factory.png" alt="worker">
+                            <span class="text-[#6ecff6] font-YekanBold text-[28pt] block h-8 2xl:text-[20pt] 2xl:h-6 mobile:text-[15pt]">۴+</span>
+                            <p class="font-YekanRegular text-[15pt] h-6 tablet:text-[8pt] mobile:text-[7pt]">کارخانه در برزیل</p>
+                        </div>
+
+                        
+                        
+                        <div class="flex flex-col justify-start gap-3 pt-3 items-center w-1/4 mobile:w-[100%] h-full custom-border [&>*]:leading-none">
+                            <img class="w-14 h-14 3xl:w-10 3xl:h-10 desktop:w-14 desktop:h-14 mobile:w-9 mobile:h-9" src="./img/icons/calendar.png" alt="worker">
+                            <span class="text-[#6ecff6] font-YekanBold text-[28pt] block h-8 2xl:text-[20pt] 2xl:h-6 mobile:text-[15pt]">۸۵+</span>
+                            <p class="font-YekanRegular text-[15pt] h-6 tablet:text-[8pt] mobile:text-[7pt]">سال سابقه</p>
+                        </div>
+
+                        
+                        
+                        <div class="flex flex-col justify-start gap-3 pt-3 items-center w-1/4 mobile:w-[100%] h-full [&>*]:leading-none">
+                            <img class="w-14 h-14 3xl:w-10 3xl:h-10 desktop:w-14 desktop:h-14 mobile:w-9 mobile:h-9" src="./img/icons/products.png" alt="worker">
+                            <span class="text-[#6ecff6] font-YekanBold text-[28pt] block h-8 2xl:text-[20pt] 2xl:h-6 mobile:text-[15pt]">۲۰۰۰۰+</span>
+                            <p class="font-YekanRegular text-[15pt] h-6 tablet:text-[8pt] mobile:text-[7pt]">نوع محصول</p>
+                        </div>
+  
+                        
+                    </div>
+
+                    <button class="hidden tablet:flex flex-row-reverse items-center justify-center gap-[18px] w-72 h-[60px] border-[#347eff] border-[2px] rounded-xl">
+                        <img src="./img/left.png" alt="">
+                        <p class="text-[19px] font-YekanRegular text-white">اطلاعات بیشتر درباره ما</p>
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Slider Videos -->
+
+    <section class="relative my-20 mobile:my-7">
+
+        <div class="shape absolute top-28 right-0">
+            <img src="./img/shape2.png" alt="">
+        </div>
+
+
+        <div class="w-full">    
+
+            <div class="container flex laptop:flex-col-reverse laptop:gap-4 slider-container relative mx-auto justify-between">
+
+                <div class="w-1/2 laptop:w-full h-full">
+                    <div class="flex mobile:flex-col justify-between items-center p-7 mobile:p-0 mobile:px-3 mobile:py-4 w-[796px] h-[450px] 3xl:w-[95%] mobile:gap-3 laptop:w-full mobile:h-full border-4 border-[#1c5d9f] mobile:border-2 rounded-[20px]">
+
+                        <div class="flex w-full">
+                            <div class="h-full w-1/2 flex items-center mobile:items-start justify-center 2xl:justify-start">
+                                <img class="w-[400px] 2xl:w-[85%] laptop:w-full" src="./img/map.png" alt="">
+                            </div>
+
+                            <div class="flex flex-col items-end justify-center mobile:justify-start gap-10 mobile:gap-3 h-full text-right w-1/2 child:text-white laptop:py-4">
+                                
+                                <h2 class="text-[25pt] font-YekanBold w-72 mb-5 desktop:mb-10 desktop:text-[18pt] mobile:text-[10pt] laptop:mb-0 mobile:mb-0 2xl:mb-0">نمایندگان ما در ایران</h2>
+                                <p dir="rtl" class="text-[13pt] desktop:text-[10pt] desktop:w-[90%] desktop:leading-8 laptop:text-[15pt] laptop:w-[98%] mobile:text-[6pt] mobile:w-[100%] 2xl:w-[95%] mobile:leading-5 mobile:text-justify leading-10 font-YekanRegular text-justify w-72">برند توپی در بیش از 20 استان کشور نمایندگی فعال دارد و شما میتوانید به راحتی از هرجای ایران محصولات توپی را تهیه کنید</p>
+
+
+                                
+                                <!-- Other Devices Btn -->
+
+                                <button class="flex mobile:hidden items-center justify-center gap-[18px] w-72 laptop:w-64 h-[61px] border-[#347eff] border-[4px] rounded-xl">
+                                    <img src="./img/left.png" alt="">
+                                    <p class="text-[19px] font-YekanRegular text-white laptop:text-[15px]">مشاهده لیست نمایندگان</p>
+                                </button>
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- Mobile Btn -->
+                        
+                        <button class="hidden mobile:flex items-center justify-center gap-[18px] w-72 h-[60px] border-[#347eff] border-[2px] rounded-xl">
+                            <img src="./img/left.png" alt="">
+                            <p class="text-[19px] font-YekanRegular text-white">مشاهده لیست نمایندگان</p>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="w-1/2 laptop:w-full h-full">
+
+                    <div class="w-[880px] h-[450px] 3xl:w-[100%] border-4 border-[#1c5d9f] mobile:border-none rounded-[20px]">
+
+                        <div class="flex flex-col text-white justify-center items-center gap-[20px] mt-7">
+                            <h2 class="font-YekanBold text-[25pt] desktop:text-[18pt]">ویدیوهای توپی</h2>
+                            <p class="text-[13pt] desktop:text-[9pt] laptop:text-[11pt] mobile:text-[7pt] font-YekanRegular">جدیدترین ویدیوهای معرفی محصولات، فرآیند تولید و رویدادهای توپی</p>
+                        </div>
+                    
+                        <div class="h-[310px] my-4 flex items-center justify-center flex-col">
+
+                            <div class="overflow-hidden h-full w-[96%] mobile:w-[85%] flex flex-col justify-center items-center gap-5 text-white">
+                                <div class="slider-track flex gap-3 px-4 transition-transform duration-500" style="width: calc(100% + 2rem);">
+                                    
+                                    <!-- Video Slidr Cards -->
+
+                                    <div class="slide-card w-[270px] h-[270px] 3xl:w-[32%] desktop:w-[49%] mobile:w-[100%] rounded-2xl flex flex-shrink-0">
+                                        <div class="flex flex-col justify-center items-end w-full">
+                                            <div class="w-full h-[169px] mt-4 bg-gradient-to-b from-[#347eff] to-[#1e3a8a] rounded-[20px] flex items-center justify-center">
+                                                <div class="w-[97%] h-[96%] bg-[#00ff00] rounded-[20px] flex items-center justify-center">
+                                                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M8 5v14l11-7z"/>
+                                                </svg>
+                                            </div>
+                                            </div>
+                                            <h3 dir="rtl" class="text-white text-3xl desktop:text-xl font-bold font-YekanBold line-clamp-1">تیتر ویدیو</h3>
+                                            <p dir="rtl" class="text-white text-[11px] text-right font-YekanRegular line-clamp-2 my-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="slide-card w-[270px] h-[270px] 3xl:w-[32%] desktop:w-[49%] mobile:w-[100%] rounded-2xl flex flex-shrink-0">
+                                        <div class="flex flex-col justify-center items-end w-full">
+                                            <div class="w-full h-[169px] mt-4 bg-gradient-to-b from-[#347eff] to-[#1e3a8a] rounded-[20px] flex items-center justify-center">
+                                                <div class="w-[97%] h-[96%] bg-[#00ff00] rounded-[20px] flex items-center justify-center">
+                                                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M8 5v14l11-7z"/>
+                                                </svg>
+                                            </div>
+                                            </div>
+                                            <h3 dir="rtl" class="text-white text-3xl desktop:text-xl font-bold font-YekanBold line-clamp-1">تیتر ویدیو</h3>
+                                            <p dir="rtl" class="text-white text-[11px] text-right font-YekanRegular line-clamp-2 my-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="slide-card w-[270px] h-[270px] 3xl:w-[32%] desktop:w-[49%] mobile:w-[100%] rounded-2xl flex flex-shrink-0">
+                                        <div class="flex flex-col justify-center items-end w-full">
+                                            <div class="w-full h-[169px] mt-4 bg-gradient-to-b from-[#347eff] to-[#1e3a8a] rounded-[20px] flex items-center justify-center">
+                                                <div class="w-[97%] h-[96%] bg-[#00ff00] rounded-[20px] flex items-center justify-center">
+                                                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M8 5v14l11-7z"/>
+                                                </svg>
+                                            </div>
+                                            </div>
+                                            <h3 dir="rtl" class="text-white text-3xl desktop:text-xl font-bold font-YekanBold line-clamp-1">تیتر ویدیو</h3>
+                                            <p dir="rtl" class="text-white text-[11px] text-right font-YekanRegular line-clamp-2 my-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="slide-card w-[270px] h-[270px] 3xl:w-[32%] desktop:w-[49%] mobile:w-[100%] rounded-2xl flex flex-shrink-0">
+                                        <div class="flex flex-col justify-center items-end w-full">
+                                            <div class="w-full h-[169px] mt-4 bg-gradient-to-b from-[#347eff] to-[#1e3a8a] rounded-[20px] flex items-center justify-center">
+                                                <div class="w-[97%] h-[96%] bg-[#00ff00] rounded-[20px] flex items-center justify-center">
+                                                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M8 5v14l11-7z"/>
+                                                </svg>
+                                            </div>
+                                            </div>
+                                            <h3 dir="rtl" class="text-white text-3xl desktop:text-xl font-bold font-YekanBold line-clamp-1">تیتر ویدیو</h3>
+                                            <p dir="rtl" class="text-white text-[11px] text-right font-YekanRegular line-clamp-2 my-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                    
+                            <div class="slider-dots flex justify-center gap-3 my-6"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Standards -->
+
+    <section class="my-16">
+
+        <div class="section-title flex flex-col items-center justify-center mb-11">
+            <h2 class="font-YekanBold text-3xl text-white relative inline-block pb-1">
+                استاندارد ها
+                <span class="absolute -bottom-1 left-0 w-full h-[3px] bg-[#347eff]"></span>
+            </h2>
+        </div>
+
+        <div dir="rtl" class="container p-0 flex flex-wrap items-center justify-center gap-7 mobile:gap-0">
+            
+            <div class="flex flex-col w-[225px] mobile:w-[120px] h-full">
+                <div class="flex items-center justify-center h-52 desktop:h-44 mobile:h-24">
+                    <img class="w-44 mobile:w-20" src="./img/dvgw.png" alt="">
+                </div>
+                <div class="h-28 mobile:h-full">
+                    <p class="font-YekanLight text-xl text-center text-white 2xl:text-[15px] desktop:text-[12px] mobile:text-[9px]">
+                        ﺗﺄﯾﯿﺪﯾﻪ اﯾﻤﻨﯽ آﻟﻤﺎن ﺑﺮای ﻣﺤﺼﻮﻻت ﮔﺎز و آب ﻣﻄﺎﺑﻖ اﺳﺘﺎﻧﺪارد ﻫﺎی اروپایی DVGW
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col w-[225px] mobile:w-[120px] h-full">
+                <div class="flex items-center justify-center h-52 desktop:h-44 mobile:h-24">
+                    <img class="mobile:w-20" src="./img/fm.png" alt="">
+                </div>
+                <div class="h-28 mobile:h-full">
+                    <p class="font-YekanLight text-xl text-center text-white 2xl:text-[15px] desktop:text-[12px] mobile:text-[9px]">
+                        ﺗﺄﯾﯿﺪﯾﻪ اﯾﻤﻨﯽ آﻟﻤﺎن ﺑﺮای ﻣﺤﺼﻮﻻت ﮔﺎز و آب ﻣﻄﺎﺑﻖ اﺳﺘﺎﻧﺪارد ﻫﺎی اروپایی DVGW
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col w-[225px] mobile:w-[120px] h-full">
+                <div class="flex items-center justify-center h-52 desktop:h-44 mobile:h-24">
+                    <img class="w-44 mobile:w-20" src="./img/inmetro.png" alt="">
+                </div>
+                <div class="h-28 mobile:h-full">
+                    <p class="font-YekanLight text-xl text-center text-white 2xl:text-[15px] desktop:text-[12px] mobile:text-[9px]">
+                        ﺗﺄﯾﯿﺪﯾﻪ اﯾﻤﻨﯽ آﻟﻤﺎن ﺑﺮای ﻣﺤﺼﻮﻻت ﮔﺎز و آب ﻣﻄﺎﺑﻖ اﺳﺘﺎﻧﺪارد ﻫﺎی اروپایی DVGW
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col w-[225px] mobile:w-[120px] h-full">
+                <div class="flex items-center justify-center h-52 desktop:h-44 mobile:h-24">
+                    <img class="mobile:w-20" src="./img/iso.png" alt="">
+                </div>
+                <div class="h-28 mobile:h-full">
+                    <p class="font-YekanLight text-xl text-center text-white 2xl:text-[15px] desktop:text-[12px] mobile:text-[9px]">
+                        ﺗﺄﯾﯿﺪﯾﻪ اﯾﻤﻨﯽ آﻟﻤﺎن ﺑﺮای ﻣﺤﺼﻮﻻت ﮔﺎز و آب ﻣﻄﺎﺑﻖ اﺳﺘﺎﻧﺪارد ﻫﺎی اروپایی DVGW
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col w-[225px] mobile:w-[120px] h-full">
+                <div class="flex items-center justify-center h-52 desktop:h-44 mobile:h-24">
+                    <img class="w-44 mobile:w-20" src="./img/UL Listed.png" alt="">
+                </div>
+                <div class="h-28 mobile:h-full">
+                    <p class="font-YekanLight text-xl text-center text-white 2xl:text-[15px] desktop:text-[12px] mobile:text-[9px]">
+                        ﺗﺄﯾﯿﺪﯾﻪ اﯾﻤﻨﯽ آﻟﻤﺎن ﺑﺮای ﻣﺤﺼﻮﻻت ﮔﺎز و آب ﻣﻄﺎﺑﻖ اﺳﺘﺎﻧﺪارد ﻫﺎی اروپایی DVGW
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col w-[225px] mobile:w-[120px] h-full">
+                <div class="flex items-center justify-center h-52 desktop:h-44 mobile:h-24">
+                    <img class="w-44 mobile:w-20" src="./img/abnt.png" alt="">
+                </div>
+                <div class="h-28 mobile:h-full">
+                    <p class="font-YekanLight text-xl text-center text-white 2xl:text-[15px] desktop:text-[12px] mobile:text-[9px]">
+                        ﺗﺄﯾﯿﺪﯾﻪ اﯾﻤﻨﯽ آﻟﻤﺎن ﺑﺮای ﻣﺤﺼﻮﻻت ﮔﺎز و آب ﻣﻄﺎﺑﻖ اﺳﺘﺎﻧﺪارد ﻫﺎی اروپایی DVGW
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="see-more flex flex-col items-center justify-center my-10">
+            <button class="custom-btm ">
+                <img src="./img/left.png" alt="">
+                <p class="text-[19px] font-YekanRegular text-white">مشاهده همه استانداردها</p>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <img src="./img/FOOTER.png" alt="">
+    </footer>
+
+    
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+</html>

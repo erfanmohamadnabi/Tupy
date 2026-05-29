@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    
+    input[type="text"]:focus {
+        outline: none; 
+        border: none;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+       
+      /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #cfcfcf; 
+    }
+
+
+    /* Fonts */
+
+    @font-face {
+    font-family: "Yekan";
+    src: local("Yekan"),url(/public/fonts/IRANYekanLight.ttf);
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: "Yekan Medium";
+    src: local("Yekan"),url(/public/fonts/IRANYekanMedium.ttf);
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: "Yekan Bold";
+    src: local("Yekan"),url(/public/fonts/IRANYekanBold.ttf);
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: "Yekan ExtraBold";
+    src: local("Yekan"),url(/public/fonts/IRANYekanExtraBold.ttf);
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: "Yekan Regular";
+    src: local("Yekan"),url(/public/fonts/IRANYekanRegular.ttf);
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: "Yekan Light";
+    src: local("Yekan"),url(/public/fonts/IRANYekanLight.ttf);
+    font-display: swap;
+    }
+    
+      
+}
+
+
+@layer components {
+
+    .custom-btm{ 
+        @apply flex flex-row-reverse items-center justify-center gap-[18px] w-72 h-[60px] border-[#347eff] border-[4px] rounded-xl;
+    }
+
+    .custom-border {
+        position: relative;
+    }
+    .custom-border::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 60px; 
+        background-color: #1c5d9f;
+    }
+
+    .last-item::after {
+        display: none;
+    }
+
+}
+
+
+@layer utilities {
+
+    .active a {
+        position: relative;
+        text-decoration: none; 
+    }
+
+    .active a::after {
+        content: "";
+        position: absolute;
+        bottom: -4px; 
+        left: 0;
+        width: 100%; 
+        height: 2px;
+        background-color: #6ecff6;
+        display: block; 
+    }
+    
+
+    /* Custom Container Size */
+
+
+    .container {
+        max-width: 94%;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            max-width: 98% !important;
+        }
+    }
+
+    /* Video Cover */
+
+    .about-video {
+        background-image: url("/public/img/1658830323-S6js.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    /* Mobile Menu Style */
+
+    .mobile-menu-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .mobile-menu-btn::before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 8px;
+        width: 24px;
+        height: 2px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    .mobile-menu-btn::after {
+        content: '';
+        position: absolute;
+        top: 19px;
+        left: 8px;
+        width: 24px;
+        height: 2px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    .mobile-menu-btn {
+        background-image: linear-gradient(white, white);
+        background-repeat: no-repeat;
+        background-position: 8px 26px;
+        background-size: 24px 2px;
+    }
+    
+
+    .mobile-menu{
+        width: 300px;
+        height: 100%;
+        left: -100%;
+        position: fixed;
+        top: 0;
+        z-index: 40;
+    }
+
+}
