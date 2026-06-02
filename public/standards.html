@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standards</title>
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body class="bg-bg-body">
+
+    <!-- Icons -->
+
+    <svg class="hidden">
+
+        <symbol id="close" 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="30" 
+            height="30" 
+            viewBox="0 0 24 24" 
+            fill="none"
+            stroke="currentColor" 
+            stroke-width="2" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"
+        >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </symbol>
+        
+    </svg>
+
+    <!-- Overflow -->
+
+    <div class="overflow hidden fixed w-full h-full bg-black/75 z-10 top-0"></div>
+    
+ 
+    <!-- Header -->
+
+    <header class="mt-[70px] laptop:mt-3 h-20  flex items-center justify-between">
+
+        <!-- Logo -->
+
+        <div class="logo h-full flex items-center justify-end">
+            <img class="w-44 ml-17 laptop:ml-5 laptop:w-28" src="./img/TUPY LOGO.png" alt="logo">
+        </div>
+
+        <!-- Menu bar -->
+
+        <div>
+            <div class="menu h-full flex items-center justify-end laptop:hidden">
+
+            <ul class="mr-17 flex flex-row-reverse justify-center items-center gap-[60px] child:text-[29px] child:font-YekanBold child:text-white 2xl:gap-8 2xl:child:text-2xl desktop:gap-4 desktop:child:text-[20px]">
+                <li class="active">
+                    <a href="">
+                        خانه
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        لیست نمایندگان
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        استانداردها
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        لیست قیمت
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        محصولات
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        ویدیوها
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        درباره توپی
+                    </a>
+                </li>
+            </ul>
+
+            </div>
+
+            <!-- Mobile Menu Open Btn -->
+
+            <div class="mobile-menu-btn mr-5 hidden laptop:block"></div>
+        </div>
+
+        <!-- Mobile Menu bar -->
+
+        <div class="mobile-menu transition-all bg-bg-body px-5">
+
+            <div class="h-20 flex justify-between items-center">
+                <div class="w-[90%] h-full flex items-center justify-start">
+                    <img class="w-28" src="./img/TUPY LOGO.png" alt="">
+                </div>
+                <div>
+                    <svg class="mobile-menu-close w-7 h-7 text-white">
+                        <use href="#close"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <ul class="flex items-center justify-center flex-col text-white font-YekanRegular w-full">
+    
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">خانه</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">لیست نمایندگان</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">استانداردها</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">لیست قیمت</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">محصولات</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">ویدیوها</a>
+                    </li>
+
+                    <li class="w-full text-center py-6">
+                        <a href="">درباره توپی</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Banner -->
+
+    <section class="overflow-hidden my-10">
+        <div class="container mx-auto">
+
+            <div class="flex laptop:flex-col items-stretch min-h-[420px]">
+
+                <!-- Image Side -->
+
+                <div class="relative w-[45%] laptop:w-full laptop:h-[300px] mobile:h-[220px] flex-shrink-0">
+                    <img
+                    src="./img/standards/banner.png"
+                    alt="استانداردهای توپی"
+                    class="w-full h-full object-cover block"
+                    />
+                    
+                </div>
+
+                <!-- Text Side -->
+
+                <div
+                    dir="rtl"
+                    class="w-[55%] laptop:w-full py-[50px] pl-20 laptop:px-5 laptop:py-7 mobile:px-4 mobile:py-6 flex flex-col justify-center items-start text-right"
+                >
+                    <h1 class="font-YekanExtraBold text-[#6ecff6] text-[clamp(42px,5vw,70px)] leading-tight mb-6 laptop:mb-4 mobile:text-[28px]">
+                        استانداردهای توپی
+                    </h1>
+                    <p class="font-YekanRegular text-[#c8d8ea] text-[clamp(15px,1.4vw,20px)] mobile:text-[14px] leading-[2] text-justify">
+                        تولیدات توپی مطابق با معتبرترین استانداردهای بین‌المللی طراحی و تولید می‌شوند تا بالاترین سطح کیفیت، ایمنی و دوام را در صنایع مختلف تضمین کنند.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Standards -->
+
+    <section class="py-10 mobile:py-7 overflow-hidden">
+        <div class="container mx-auto px-6 mobile:px-4">
+
+            <!-- Titles -->
+
+            <div class="flex items-center justify-end gap-3 mb-10 mobile:mb-7">
+                <h2 class="font-YekanExtraBold text-[#6ecff6] text-[30px] mobile:text-[13px] laptop:text-[20px]">
+                    استانداردهای بین‌المللی
+                </h2>
+                <img src="./img/standards/icons/world.png" alt="" class="w-11 h-11 mobile:w-7 mobile:h-7" />
+            </div>
+
+            <!-- Cards -->
+            <div class="mobile:hidden grid grid-cols-3 gap-36 2xl:gap-17 laptop:flex laptop:flex-wrap laptop:justify-between laptop:gap-0 laptop:gap-y-4">
+
+                <div class="w-full 2xl:w-[390px] desktop:w-[300px] laptop:w-[48%] h-[347px] border-2 border-[#6ecff6] rounded-3xl p-9">
+                    <div class="h-full w-full">
+                        <div class="w-full h-32 flex">
+                            <div class="w-1/2 flex items-center justify-start h-full">
+                                <img class="w-[130px]" src="./img/standards/logo/dvgw.png" alt="">
+                            </div>
+                            <h3 class="w-1/2 flex items-center justify-end h-full text-[36px] 2xl:text-[30px] desktop:text-[20px] tablet:text-[16px] text-center text-[#6ecff6] font-YekanExtraBold">DVGW</h3>
+                        </div>
+                        <div dir="rtl" class="w-full h-17 flex my-5">
+                            <p class="text-2xl 2xl:text-[18px] desktop:text-[14px] tablet:text-[10px] text-white font-YekanRegular">تأییدیه ایمنی آلمان برای محصولات گاز و آب مطابق استانداردهای اروپایی</p>
+                        </div>
+                        <div class="w-full h-16 flex">
+                            <a href="#" class="w-full h-[54px] flex flex-row-reverse items-center justify-center border-2 border-[#6ecff6] rounded-[10px] gap-4">
+                                <p class="font-YekanRegular text-white">مشاهده جزئیات</p>
+                                <img src="./img/left.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full 2xl:w-[390px] desktop:w-[300px] laptop:w-[48%] h-[347px] border-2 border-[#6ecff6] rounded-3xl p-9">
+                    <div class="h-full w-full">
+                        <div class="w-full h-32 flex">
+                            <div class="w-1/2 flex items-center justify-start h-full">
+                                <img class="w-[130px]" src="./img/standards/logo/fm.png" alt="">
+                            </div>
+                            <h3 class="w-1/2 flex items-center justify-end h-full text-[36px] 2xl:text-[30px] desktop:text-[20px] tablet:text-[16px] text-center text-[#6ecff6] font-YekanExtraBold">FM APPROVED</h3>
+                        </div>
+                        <div dir="rtl" class="w-full h-17 flex my-5">
+                            <p class="text-2xl 2xl:text-[18px] desktop:text-[14px] tablet:text-[10px] text-white font-YekanRegular">تأییدیه ایمنی در برابر آتش‌سوزی و انفجار آمریکا</p>
+                        </div>
+                        <div class="w-full h-16 flex">
+                            <a href="#" class="w-full h-[54px] flex flex-row-reverse items-center justify-center border-2 border-[#6ecff6] rounded-[10px] gap-4">
+                                <p class="font-YekanRegular text-white">مشاهده جزئیات</p>
+                                <img src="./img/left.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full 2xl:w-[390px] desktop:w-[300px] laptop:w-[48%] h-[347px] border-2 border-[#6ecff6] rounded-3xl p-9">
+                    <div class="h-full w-full">
+                        <div class="w-full h-32 flex">
+                            <div class="w-1/2 flex items-center justify-start h-full">
+                                <img class="w-[130px]" src="./img/standards/logo/UL Listed.png" alt="">
+                            </div>
+                            <h3 class="w-1/2 flex items-center justify-end h-full text-[36px] 2xl:text-[30px] desktop:text-[20px] text-center text-[#6ecff6] font-YekanExtraBold">UL LISTED</h3>
+                        </div>
+                        <div dir="rtl" class="w-full h-17 flex my-5">
+                            <p class="text-2xl 2xl:text-[18px] desktop:text-[14px] tablet:text-[10px] text-white font-YekanRegular">استاندارد جهانی ایمنی برای محصولات صنعتی و الکتریکی</p>
+                        </div>
+                        <div class="w-full h-16 flex">
+                            <a href="#" class="w-full h-[54px] flex flex-row-reverse items-center justify-center border-2 border-[#6ecff6] rounded-[10px] gap-4">
+                                <p class="font-YekanRegular text-white">مشاهده جزئیات</p>
+                                <img src="./img/left.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full 2xl:w-[390px] desktop:w-[300px] laptop:w-[48%] h-[347px] border-2 border-[#6ecff6] rounded-3xl p-9">
+                    <div class="h-full w-full">
+                        <div class="w-full h-32 flex">
+                            <div class="w-1/2 flex items-center justify-start h-full">
+                                <img class="w-[130px]" src="./img/standards/logo/abnt.png" alt="">
+                            </div>
+                            <h3 class="w-1/2 flex items-center justify-end h-full text-[36px] 2xl:text-[30px] desktop:text-[20px] tablet:text-[16px] text-center text-[#6ecff6] font-YekanExtraBold">ABNT</h3>
+                        </div>
+                        <div dir="rtl" class="w-full h-17 flex my-5">
+                            <p class="text-2xl 2xl:text-[18px] desktop:text-[14px] tablet:text-[10px] text-white font-YekanRegular">استاندارد فنی و ایمنی برزیل</p>
+                        </div>
+                        <div class="w-full h-16 flex">
+                            <a href="#" class="w-full h-[54px] flex flex-row-reverse items-center justify-center border-2 border-[#6ecff6] rounded-[10px] gap-4">
+                                <p class="font-YekanRegular text-white">مشاهده جزئیات</p>
+                                <img src="./img/left.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full 2xl:w-[390px] desktop:w-[300px] laptop:w-[48%] h-[347px] border-2 border-[#6ecff6] rounded-3xl p-9">
+                    <div class="h-full w-full">
+                        <div class="w-full h-32 flex">
+                            <div class="w-1/2 flex items-center justify-start h-full">
+                                <img class="w-[110px]" src="./img/standards/logo/inmetro.png" alt="">
+                            </div>
+                            <h3 class="w-1/2 flex items-center justify-end h-full text-[36px] 2xl:text-[30px] desktop:text-[20px] tablet:text-[16px] text-center text-[#6ecff6] font-YekanExtraBold">INMETRO</h3>
+                        </div>
+                        <div dir="rtl" class="w-full h-17 flex my-5">
+                            <p class="text-2xl 2xl:text-[18px] desktop:text-[14px] tablet:text-[10px] text-white font-YekanRegular">استاندارد ملی کیفیت و ایمنی برزیل</p>
+                        </div>
+                        <div class="w-full h-16 flex">
+                            <a href="#" class="w-full h-[54px] flex flex-row-reverse items-center justify-center border-2 border-[#6ecff6] rounded-[10px] gap-4">
+                                <p class="font-YekanRegular text-white">مشاهده جزئیات</p>
+                                <img src="./img/left.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full 2xl:w-[390px] desktop:w-[300px] laptop:w-[48%] h-[347px] border-2 border-[#6ecff6] rounded-3xl p-9">
+                    <div class="h-full w-full">
+                        <div class="w-full h-32 flex">
+                            <div class="w-1/2 flex items-center justify-start h-full">
+                                <img class="w-[190px]" src="./img/standards/logo/iso.png" alt="">
+                            </div>
+                            <h3 class="w-1/2 flex items-center justify-end h-full text-[36px] 2xl:text-[30px] desktop:text-[20px] tablet:text-[16px] text-center text-[#6ecff6] font-YekanExtraBold">ISO 9001 ISO 14001</h3>
+                        </div>
+                        <div dir="rtl" class="w-full h-17 flex my-5">
+                            <p class="text-2xl 2xl:text-[18px] desktop:text-[14px] tablet:text-[10px] text-white font-YekanRegular">مدیریت کیفیت و محیط زیست</p>
+                        </div>
+                        <div class="w-full h-16 flex">
+                            <a href="#" class="w-full h-[54px] flex flex-row-reverse items-center justify-center border-2 border-[#6ecff6] rounded-[10px] gap-4">
+                                <p class="font-YekanRegular text-white">مشاهده جزئیات</p>
+                                <img src="./img/left.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mobile Slider -->
+
+            <div class="hidden mobile:block overflow-hidden" id="standardsSlider">
+                <div class="flex transition-transform duration-500 ease-in-out" id="standardsTrack">
+
+                    <div class="min-w-full flex-shrink-0 w-full">
+                        <div class="w-full border-2 border-[#6ecff6] rounded-3xl p-6 flex flex-col" style="min-height: 240px;">
+                            <div class="flex items-center justify-between h-[70px]">
+                                <img class="w-[90px] object-contain" src="./img/standards/logo/dvgw.png" alt="">
+                                <h3 class="text-[22px] text-[#6ecff6] font-YekanExtraBold">DVGW</h3>
+                            </div>
+                            <div dir="rtl" class="flex-1 flex items-center py-3">
+                                <p class="text-[13px] text-white font-YekanRegular leading-7 w-full">تأییدیه ایمنی آلمان برای محصولات گاز و آب مطابق استانداردهای اروپایی</p>
+                            </div>
+                            <a href="#" class="w-full h-[44px] flex flex-row-reverse items-center justify-center border-2 border-[#6ecff6] rounded-[10px] gap-3 flex-shrink-0">
+                                <p class="font-YekanRegular text-white text-[13px]">مشاهده جزئیات</p>
+                                <img src="./img/left.png" alt="" class="w-4">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="min-w-full flex-shrink-0 w-full">
+                        <div class="w-full border-2 border-[#6ecff6] rounded-3xl p-6 flex flex-col" style="min-height: 240px;">
+                            <div class="flex items-center justify-between h-[70px]">
+                                <img class="w-[90px] object-contain" src="./img/standards/logo/fm.png" alt="">
+                                <h3 class="text-[22px] text-[#6ecff6] font-YekanExtraBold">FM APPROVED</h3>
+                            </div>
+                            <div dir="rtl" class="flex-1 flex items-center py-3">
+                                <p class="text-[13px] text-white font-YekanRegular leading-7 w-full">تأییدیه ایمنی در برابر آتش‌سوزی و انفجار آمریکا</p>
+                            </div>
+                            <a href="#" class="w-full h-[44px] flex flex-row-reverse items-center justify-center border-2 border-[#6ecff6] rounded-[10px] gap-3 flex-shrink-0">
+                                <p class="font-YekanRegular text-white text-[13px]">مشاهده جزئیات</p>
+                                <img src="./img/left.png" alt="" class="w-4">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="min-w-full flex-shrink-0 w-full">
+                        <div class="w-full border-2 border-[#6ecff6] rounded-3xl p-6 flex flex-col" style="min-height: 240px;">
+                            <div class="flex items-center justify-between h-[70px]">
+                                <img class="w-[90px] object-contain" src="./img/standards/logo/UL Listed.png" alt="">
+                                <h3 class="text-[22px] text-[#6ecff6] font-YekanExtraBold">UL LISTED</h3>
+                            </div>
+                            <div dir="rtl" class="flex-1 flex items-center py-3">
+                                <p class="text-[13px] text-white font-YekanRegular leading-7 w-full">استاندارد جهانی ایمنی برای محصولات صنعتی و الکتریکی</p>
+                            </div>
+                            <a href="#" class="w-full h-[44px] flex flex-row-reverse items-center justify-center border-2 border-[#6ecff6] rounded-[10px] gap-3 flex-shrink-0">
+                                <p class="font-YekanRegular text-white text-[13px]">مشاهده جزئیات</p>
+                                <img src="./img/left.png" alt="" class="w-4">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="min-w-full flex-shrink-0 w-full">
+                        <div class="w-full border-2 border-[#6ecff6] rounded-3xl p-6 flex flex-col" style="min-height: 240px;">
+                            <div class="flex items-center justify-between h-[70px]">
+                                <img class="w-[90px] object-contain" src="./img/standards/logo/abnt.png" alt="">
+                                <h3 class="text-[22px] text-[#6ecff6] font-YekanExtraBold">ABNT</h3>
+                            </div>
+                            <div dir="rtl" class="flex-1 flex items-center py-3">
+                                <p class="text-[13px] text-white font-YekanRegular leading-7 w-full">استاندارد فنی و ایمنی برزیل</p>
+                            </div>
+                            <a href="#" class="w-full h-[44px] flex flex-row-reverse items-center justify-center border-2 border-[#6ecff6] rounded-[10px] gap-3 flex-shrink-0">
+                                <p class="font-YekanRegular text-white text-[13px]">مشاهده جزئیات</p>
+                                <img src="./img/left.png" alt="" class="w-4">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="min-w-full flex-shrink-0 w-full">
+                        <div class="w-full border-2 border-[#6ecff6] rounded-3xl p-6 flex flex-col" style="min-height: 240px;">
+                            <div class="flex items-center justify-between h-[70px]">
+                                <img class="w-[80px] object-contain" src="./img/standards/logo/inmetro.png" alt="">
+                                <h3 class="text-[22px] text-[#6ecff6] font-YekanExtraBold">INMETRO</h3>
+                            </div>
+                            <div dir="rtl" class="flex-1 flex items-center py-3">
+                                <p class="text-[13px] text-white font-YekanRegular leading-7 w-full">استاندارد ملی کیفیت و ایمنی برزیل</p>
+                            </div>
+                            <a href="#" class="w-full h-[44px] flex flex-row-reverse items-center justify-center border-2 border-[#6ecff6] rounded-[10px] gap-3 flex-shrink-0">
+                                <p class="font-YekanRegular text-white text-[13px]">مشاهده جزئیات</p>
+                                <img src="./img/left.png" alt="" class="w-4">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="min-w-full flex-shrink-0 w-full">
+                        <div class="w-full border-2 border-[#6ecff6] rounded-3xl p-6 flex flex-col" style="min-height: 240px;">
+                            <div class="flex items-center justify-between h-[70px]">
+                                <img class="w-[110px] object-contain" src="./img/standards/logo/iso.png" alt="">
+                                <h3 class="text-[18px] text-[#6ecff6] font-YekanExtraBold text-left leading-6">ISO 9001<br/>ISO 14001</h3>
+                            </div>
+                            <div dir="rtl" class="flex-1 flex items-center py-3">
+                                <p class="text-[13px] text-white font-YekanRegular leading-7 w-full">مدیریت کیفیت و محیط زیست</p>
+                            </div>
+                            <a href="#" class="w-full h-[44px] flex flex-row-reverse items-center justify-center border-2 border-[#6ecff6] rounded-[10px] gap-3 flex-shrink-0">
+                                <p class="font-YekanRegular text-white text-[13px]">مشاهده جزئیات</p>
+                                <img src="./img/left.png" alt="" class="w-4">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+
+        </div>
+    </section>
+
+    <!-- Garanty -->
+
+    <section class="py-16 tablet:py-8 mobile:py-6 overflow-hidden" dir="rtl">
+        <div class="container mx-auto px-12 laptop:px-8 mobile:px-4 max-w-[1400px]">
+
+            <div class="flex flex-row items-center justify-between gap-14 desktop:gap-10 tablet:gap-6 mobile:gap-3">
+
+                <div class="w-[60%] laptop:w-[65%] flex flex-col gap-6 tablet:gap-3 mobile:gap-2">
+                    
+                    <div class="flex items-center justify-start gap-3 mobile:gap-1.5">
+                        <img 
+                            src="./img/standards/garanty/icon.png" 
+                            alt="آیکون گارانتی" 
+                            class="w-12 h-12 laptop:w-10 laptop:h-10 tablet:w-7 tablet:h-7 mobile:w-9 mobile:h-9 object-contain" 
+                        />
+                        <h2 class="font-YekanExtraBold text-[#6ecff6] text-[30px] mobile:text-[13px] laptop:text-[20px]">
+                            درباره گارانتی ۱۰ ساله
+                        </h2>
+                    </div>
+
+                    <p class="font-YekanRegular text-white text-[30px] desktop:text-[18px] laptop:text-[16px] tablet:text-[12px] mobile:text-[9px] leading-[2.4] tablet:leading-[2] mobile:leading-[1.8] text-justify laptop:text-right">
+                        توپی افتخار دارد به عنوان تنها اتصالات دنده‌ای دارای گارانتی ۱۰ ساله در ایران، ایمنی، دوام و اطمینان را برای پروژه‌های شما تضمین کند. ساخت کشور برزیل، مطابق با استانداردهای جهانی و مورد اعتماد نسل‌ها در بازار ایران
+                    </p>
+                </div>
+
+                <div class="w-[30%] laptop:w-[35%] flex justify-center items-center">
+                    <img
+                        src="./img/standards/garanty/garanty.png"
+                        alt="گارانتی ۱۰ ساله توپی"
+                        class="w-full max-w-[280px] desktop:max-w-[220px] laptop:max-w-[180px] tablet:max-w-[120px] mobile:max-w-[90px] object-contain drop-shadow-2xl"
+                    />
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Quality -->
+     
+    <section class="py-16 tablet:py-8 mobile:py-6 overflow-hidden my-6" dir="rtl">
+        <div class="container mx-auto px-12 laptop:px-8 mobile:px-4 max-w-[1400px]">
+
+            <div class="flex flex-row items-center justify-between gap-14 desktop:gap-10 tablet:gap-6 mobile:gap-3">
+
+                <div class="w-[60%] h-[480px] 3xl:h-[550px] desktop:h-[400px] laptop:w-[65%] laptop:h-full flex flex-col justify-between gap-4 tablet:gap-3 mobile:gap-2">
+                    
+                    <div class="flex items-center justify-start gap-3 mobile:gap-1.5">
+                        <img 
+                            src="./img/standards/icons/quality.png" 
+                            alt="آیکون گارانتی" 
+                            class="w-12 h-12 laptop:w-10 laptop:h-10 tablet:w-7 tablet:h-7 mobile:w-9 mobile:h-9 object-contain" 
+                        />
+                        <h2 class="font-YekanExtraBold text-[#6ecff6] text-[30px] mobile:text-[13px] laptop:text-[20px]">
+                            کیفیت تضمین شده
+                        </h2>
+                    </div>
+
+                    <p class="font-YekanRegular text-white text-[27px] desktop:text-[18px] laptop:text-[16px] tablet:text-[12px] mobile:text-[9px] leading-[2.4] tablet:leading-[2] mobile:leading-[1.8] text-justify laptop:text-right">
+                        محصولات توپی تحت سختگیرانه ترین آزمایش‌ها و کنترل‌های کیفی در آزمایشگاه‌های مجهز و پیشرفته تولید می‌شوند؛ تا اطمینان حاصل شود که تمامی استانداردهای بین‌المللی رعایت شده و محصولی مطمئن و پایدار به دست شما برسد.
+                    </p>
+
+                    <dir class="flex laptop:hidden m-0 justify-between items-center p-0 gap-5 child:px-2 child:gap-4 child:py-4">
+                        <div class="w-[215px] h-[200px] 2xl:h-[170px] desktop:h-[140px] flex flex-col border-2 border-[#6ecff6] rounded-[20px]">
+                            <div class="h-28 flex items-center justify-center">
+                                <img class="w-16 2xl:w-10" src="./img/standards/icons/azmayesh.png" alt="azmayesh">
+                            </div>
+                            <div class="h-14 text-center w-full flex items-start justify-center">
+                                <p class="text-[20px] 3xl:text-[15px] desktop:text-[9px] font-YekanLight text-white">آزمایش‌های مکانیکی</p>
+                            </div>
+                        </div>
+                        <div class="w-[215px] h-[200px] 2xl:h-[170px] desktop:h-[140px] flex flex-col border-2 border-[#6ecff6] rounded-[20px]">
+                            <div class="h-28 flex items-center justify-center">
+                                <img class="w-17 2xl:w-10" src="./img/standards/icons/feshar.png" alt="feshar">
+                            </div>
+                            <div class="h-14 text-center w-full flex items-start justify-center">
+                                <p class="text-[20px] 3xl:text-[15px] desktop:text-[9px] font-YekanLight text-white">آزمون‌های فشار و نشتی</p>
+                            </div>
+                        </div>
+                        <div class="w-[215px] h-[200px] 2xl:h-[170px] desktop:h-[140px] flex flex-col border-2 border-[#6ecff6] rounded-[20px]">
+                            <div class="h-28 flex items-center justify-center">
+                                <img class="w-17 2xl:w-10" src="./img/standards/icons/azmayeshsh.png" alt="azmayesh">
+                            </div>
+                            <div class="h-14 text-center w-full flex items-start justify-center">
+                                <p class="text-[17px] 3xl:text-[12px] desktop:text-[8px] font-YekanLight text-white">آزمون‌های شیمیایی و مقاومت در برابر خوردگی</p>
+                            </div>
+                        </div>
+                        <div class="w-[215px] h-[200px] 2xl:h-[170px] desktop:h-[140px] flex flex-col border-2 border-[#6ecff6] rounded-[20px]">
+                            <div class="h-28 flex items-center justify-center">
+                                <img class="w-17 2xl:w-10" src="./img/standards/icons/abad.png" alt="azmayesh">
+                            </div>
+                            <div class="h-14 text-center w-full flex items-start justify-center">
+                                <p class="text-[20px] 3xl:text-[15px] desktop:text-[9px] font-YekanLight text-white">کنترل ابعاد و تلورانس‌ها</p>
+                            </div>
+                        </div>
+                        <div class="w-[215px] h-[200px] 2xl:h-[170px] desktop:h-[140px] flex flex-col border-2 border-[#6ecff6] rounded-[20px]">
+                            <div class="h-28 flex items-center justify-center">
+                                <img class="w-17 2xl:w-10" src="./img/standards/icons/control.png" alt="azmayesh">
+                            </div>
+                            <div class="h-14 text-center w-full flex items-start justify-center">
+                                <p class="text-[20px] 3xl:text-[15px] desktop:text-[9px] font-YekanLight text-white">کنترل کیفیت و بازرسی نهایی</p>
+                            </div>
+                        </div>
+                    </dir>
+                </div>
+
+                <div class="w-[30%] h-[480px] 3xl:h-[550px] desktop:w-[35%] desktop:h-[400px] laptop:w-[35%] laptop:h-full flex justify-end items-end">
+                    <img
+                        src="./img/standards/tazminpro.png"
+                        alt="گارانتی ۱۰ ساله توپی"
+                        class="w-full max-w-[550px] desktop:max-w-full laptop:max-w-full tablet:max-w-[120px] mobile:max-w-[90px] object-contain drop-shadow-2xl"
+                    />
+                </div>
+
+            </div>
+
+            <dir class="hidden laptop:flex m-0 justify-between items-center p-0 gap-1 child:gap-2 my-8">
+                <div class="w-1/5 h-[100px]  flex flex-col border-2 border-[#6ecff6] rounded-[10px]">
+                    <div class="h-28 flex items-center justify-center">
+                        <img class="w-7" src="./img/standards/icons/azmayesh.png" alt="azmayesh">
+                    </div>
+                    <div class="h-14 text-center w-full flex items-start justify-center">
+                        <p class="tablet:text-[6px] laptop:text-[9px] font-YekanLight text-white">آزمایش‌های مکانیکی</p>
+                    </div>
+                </div>
+                <div class="w-1/5 h-[100px]  flex flex-col border-2 border-[#6ecff6] rounded-[10px] px-2 py-2">
+                    <div class="h-28 flex items-center justify-center">
+                        <img class="w-7" src="./img/standards/icons/feshar.png" alt="feshar">
+                    </div>
+                    <div class="h-14 text-center w-full flex items-start justify-center">
+                        <p class="tablet:text-[6px] laptop:text-[9px] font-YekanLight text-white">آزمون‌های فشار و نشتی</p>
+                    </div>
+                </div>
+                <div class="w-1/5 h-[100px] flex flex-col border-2 border-[#6ecff6] rounded-[10px] px-2 py-2">
+                    <div class="h-28 flex items-center justify-center">
+                        <img class="w-7" src="./img/standards/icons/azmayeshsh.png" alt="azmayesh">
+                    </div>
+                    <div class="h-14 text-center w-full flex items-start justify-center">
+                        <p class="tablet:text-[5px] laptop:text-[9px] font-YekanLight text-white">آزمون‌های شیمیایی و مقاومت در برابر خوردگی</p>
+                    </div>
+                </div>
+                <div class="w-1/5 h-[100px] flex flex-col border-2 border-[#6ecff6] rounded-[10px] px-2 py-2">
+                    <div class="h-28 flex items-center justify-center">
+                        <img class="w-7" src="./img/standards/icons/abad.png" alt="azmayesh">
+                    </div>
+                    <div class="h-14 text-center w-full flex items-start justify-center">
+                        <p class="tablet:text-[6px] laptop:text-[9px] font-YekanLight text-white">کنترل ابعاد و تلورانس‌ها</p>
+                    </div>
+                </div>
+                <div class="w-1/5 h-[100px] flex flex-col border-2 border-[#6ecff6] rounded-[10px] px-2 py-2">
+                    <div class="h-28 flex items-center justify-center">
+                        <img class="w-7" src="./img/standards/icons/control.png" alt="azmayesh">
+                    </div>
+                    <div class="h-14 text-center w-full flex items-start justify-center">
+                        <p class="tablet:text-[6px] laptop:text-[9px] font-YekanLight text-white">کنترل کیفیت و بازرسی نهایی</p>
+                    </div>
+                </div>
+            </dir>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <img class="w-full" src="./img/FOOTER.png" alt="">
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/standard.js"></script>
+</body>
+</html>
