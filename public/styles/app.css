@@ -556,7 +556,6 @@ video {
 
 input[type="text"]:focus {
   outline: none;
-  border: none;
 }
 
 ::-webkit-scrollbar {
@@ -580,7 +579,7 @@ input[type="text"]:focus {
 @font-face {
   font-family: "Yekan";
 
-  src: local("Yekan"),url(../fonts/IRANYekanLight.ttf);
+  src: local("Yekan"),url(/public/fonts/IRANYekanLight.ttf);
 
   font-display: swap;
 }
@@ -588,7 +587,7 @@ input[type="text"]:focus {
 @font-face {
   font-family: "Yekan Medium";
 
-  src: local("Yekan"),url(../fonts/IRANYekanMedium.ttf);
+  src: local("Yekan"),url(/public/fonts/IRANYekanMedium.ttf);
 
   font-display: swap;
 }
@@ -596,7 +595,7 @@ input[type="text"]:focus {
 @font-face {
   font-family: "Yekan Bold";
 
-  src: local("Yekan"),url(../fonts/IRANYekanBold.ttf);
+  src: local("Yekan"),url(/public/fonts/IRANYekanBold.ttf);
 
   font-display: swap;
 }
@@ -604,7 +603,7 @@ input[type="text"]:focus {
 @font-face {
   font-family: "Yekan ExtraBold";
 
-  src: local("Yekan"),url(../fonts/IRANYekanExtraBold.ttf);
+  src: local("Yekan"),url(/public/fonts/IRANYekanExtraBold.ttf);
 
   font-display: swap;
 }
@@ -612,7 +611,7 @@ input[type="text"]:focus {
 @font-face {
   font-family: "Yekan Regular";
 
-  src: local("Yekan"),url(../fonts/IRANYekanRegular.ttf);
+  src: local("Yekan"),url(/public/fonts/IRANYekanRegular.ttf);
 
   font-display: swap;
 }
@@ -620,7 +619,7 @@ input[type="text"]:focus {
 @font-face {
   font-family: "Yekan Light";
 
-  src: local("Yekan"),url(../fonts/IRANYekanLight.ttf);
+  src: local("Yekan"),url(/public/fonts/IRANYekanLight.ttf);
 
   font-display: swap;
 }
@@ -684,6 +683,54 @@ input[type="text"]:focus {
   width: 2px;
   height: 60px;
   background-color: #1c5d9f;
+}
+
+.\!popup {
+  position: fixed !important;
+  top: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(-20px) !important;
+  background: rgba(30, 58, 95, 0.95) !important;
+  color: #6ecff6 !important;
+  padding: 12px 20px !important;
+  border: 1px solid #1c5d9f !important;
+  border-radius: 12px !important;
+  font-family: sans-serif !important;
+  font-size: 14px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: all 0.3s ease !important;
+  z-index: 9999 !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+}
+
+.popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  background: rgba(30, 58, 95, 0.95);
+  color: #6ecff6;
+  padding: 12px 20px;
+  border: 1px solid #1c5d9f;
+  border-radius: 12px;
+  font-family: sans-serif;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 9999;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.\!popup.show {
+  opacity: 1 !important;
+  transform: translateX(-50%) translateY(0) !important;
+}
+
+.popup.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .pointer-events-none {
@@ -1454,6 +1501,22 @@ input[type="text"]:focus {
 
 .animate-marquee {
   animation: marquee 25s linear infinite;
+}
+
+@keyframes productFadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-productFadeDown {
+  animation: productFadeDown 0.7s cubic-bezier(.22,1,.36,1) forwards;
 }
 
 .cursor-pointer {
@@ -2305,7 +2368,7 @@ input[type="text"]:focus {
 /* Video Cover */
 
 .about-video {
-  background-image: url("../img/1658830323-S6js.jpg");
+  background-image: url("/public/img/1658830323-S6js.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

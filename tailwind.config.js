@@ -6,14 +6,31 @@ module.exports = {
 
 
       animation: {
-            marquee: 'marquee 25s linear infinite',
-        },
-        keyframes: {
-            marquee: {
-                '0%':   { transform: 'translateX(0)' },
-                '100%': { transform: 'translateX(-100%)' },
-            },
-        },
+        marquee: 'marquee 25s linear infinite',
+        productFadeDown: 'productFadeDown 0.7s cubic-bezier(.22,1,.36,1) forwards',
+      },
+
+      keyframes: {
+          marquee: {
+              '0%': {
+                  transform: 'translateX(0)',
+              },
+              '100%': {
+                  transform: 'translateX(-100%)',
+              },
+          },
+
+          productFadeDown: {
+              '0%': {
+                  opacity: '0',
+                  transform: 'translateY(-30px) scale(.95)',
+              },
+              '100%': {
+                  opacity: '1',
+                  transform: 'translateY(0) scale(1)',
+              },
+          },
+      },
 
       colors : {
         "bg-body" : {
@@ -64,14 +81,7 @@ module.exports = {
       center: true,
       padding : {
         DEFAULT : '1rem',
-      },
-      // screens: {
-      //   'mobile': '640px',
-      //   'tablet': '768px',
-      //   'laptop': '1024px',
-      //   'desktop': '1280px',
-      //   '2xl': '1300px'
-      // }
+      }
     },
 
   },
