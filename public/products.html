@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نمایندگان ما</title>
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body class="bg-bg-body">
+
+    <!-- ! $$$$$$$$$$$$$$$$$$$$$ -->
+
+    <!-- Icons -->
+
+    <svg class="hidden">
+
+        <symbol id="close" 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="30" 
+            height="30" 
+            viewBox="0 0 24 24" 
+            fill="none"
+            stroke="currentColor" 
+            stroke-width="2" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"
+        >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </symbol>
+
+        <symbol id="left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-6 h-6">
+            <path d="M20 12H6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M12 18L6 12L12 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        
+    </svg>
+
+    <!-- Popups -->
+
+    <div class="tablet:hidden">
+        <div id="popup" class="popup font-YekanRegular">
+            نقشه با موفقیت آپدیت شد
+        </div>
+    </div>
+
+    <!-- ! $$$$$$$$$$$$$$$$$$$$$ -->
+
+    <!-- Overflow -->
+
+    <div class="overflow hidden fixed w-full h-full bg-black/75 z-10 top-0"></div>
+    
+ 
+    <!-- Header -->
+
+    <header class="mt-[70px] laptop:mt-3 h-20  flex items-center justify-between">
+
+        <!-- Logo -->
+
+        <div class="logo h-full flex items-center justify-end">
+            <img class="w-44 ml-17 laptop:ml-5 laptop:w-28" src="./img/TUPY LOGO.png" alt="logo">
+        </div>
+
+        <!-- Menu bar -->
+
+        <div>
+            <div class="menu h-full flex items-center justify-end laptop:hidden">
+
+            <ul class="mr-17 flex flex-row-reverse justify-center items-center gap-[60px] child:text-[29px] child:font-YekanBold child:text-white 2xl:gap-8 2xl:child:text-2xl desktop:gap-4 desktop:child:text-[20px]">
+                <li class="active">
+                    <a href="">
+                        خانه
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        لیست نمایندگان
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        استانداردها
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        لیست قیمت
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        محصولات
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        ویدیوها
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        درباره توپی
+                    </a>
+                </li>
+            </ul>
+
+            </div>
+
+            <!-- Mobile Menu Open Btn -->
+
+            <div class="mobile-menu-btn mr-5 hidden laptop:block"></div>
+        </div>
+
+        <!-- Mobile Menu bar -->
+
+        <div class="mobile-menu transition-all bg-bg-body px-5">
+
+            <div class="h-20 flex justify-between items-center">
+                <div class="w-[90%] h-full flex items-center justify-start">
+                    <img class="w-28" src="./img/TUPY LOGO.png" alt="">
+                </div>
+                <div>
+                    <svg class="mobile-menu-close w-7 h-7 text-white">
+                        <use href="#close"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <ul class="flex items-center justify-center flex-col text-white font-YekanRegular w-full">
+    
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">خانه</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">لیست نمایندگان</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">استانداردها</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">لیست قیمت</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">محصولات</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">ویدیوها</a>
+                    </li>
+
+                    <li class="w-full text-center py-6">
+                        <a href="">درباره توپی</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Banner -->
+
+    <section class="overflow-hidden mt-10 mb-5 mobile:mb-0">
+        <div class="container mx-auto">
+
+            <div class="flex laptop:flex-col items-stretch min-h-[420px]">
+
+                <!-- Image Side -->
+
+                <div class="relative w-[45%] laptop:w-full laptop:h-[300px] mobile:h-[220px] flex-shrink-0">
+                    <img
+                    src="./img/products/banner.png"
+                    alt="محصولات توپی"
+                    class="w-full h-full object-cover block"
+                    />
+                    
+                </div>
+
+                <!-- Text Side -->
+
+                <div
+                    dir="rtl"
+                    class="w-[55%] laptop:w-full py-[50px] pl-20 laptop:px-5 laptop:py-7 mobile:px-4 mobile:py-6 flex flex-col justify-center items-start text-right"
+                >
+                    <h1 class="font-YekanExtraBold text-[#6ecff6] text-[clamp(42px,5vw,70px)] leading-tight mb-6 laptop:mb-4 mobile:text-[28px]">
+                   محصولات توپی
+                    </h1>
+                    <p class="font-YekanRegular text-[#c8d8ea] text-[clamp(15px,1.4vw,20px)] mobile:text-[14px] leading-[2] text-justify">
+                        اتصالاتی با کیفیت جهانی برای کاربردهای متنوع در
+                        صنایع ساختمانی، تاسیساتی و صنعتی    
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+
+    <section class="py-10">
+        <div class="container mx-auto">
+
+            <div class="border-2 border-[#5EC9FF] bg-[#061b3e] rounded-[32px] p-6 flex gap-6 mobile:flex-col">
+
+                <!-- Products -->
+
+                <div class="flex-1">
+
+                    <!-- Desktop -->
+                    <div id="productsSlider" class="grid grid-cols-4 gap-6  desktop:flex">
+
+                        <!-- Item -->
+
+                        <div class="product-item border-2 border-[#5EC9FF] rounded-[24px] h-[280px] desktop:w-full laptop:h-[230px] tablet:h-[220px] flex flex-col">
+
+                            <div class="flex-1 flex items-center justify-center">
+                                <img src="./img/products/products/bsp/بوشن.png" class="w-[130px] 2xl:w-[100px] desktop:w-[150px] laptop:w-[110px] tablet:w-[90px] object-contain">
+                            </div>
+
+                            <h3
+                                class="text-center text-white text-[28px] 2xl:text-[20px] font-YekanRegular pb-6">
+                                بوشن
+                            </h3>
+                        </div>
+
+                        <!-- Item -->
+
+                        <div class="product-item border-2 border-[#5EC9FF] rounded-[24px] h-[280px] desktop:w-full laptop:h-[230px] tablet:h-[220px] flex flex-col laptop:hidden">
+
+                            <div class="flex-1 flex items-center justify-center">
+                                <img src="./img/products/products/bsp/زانو.png" class="w-[130px] 2xl:w-[100px] desktop:w-[150px] laptop:w-[110px] tablet:w-[90px] object-contain">
+                            </div>
+
+                            <h3
+                                class="text-center text-white text-[28px] 2xl:text-[20px] font-YekanRegular pb-6">
+                                زانو
+                            </h3>
+                        </div>
+
+                        <!-- Item -->
+
+                        <div class="product-item border-2 border-[#5EC9FF] rounded-[24px] h-[280px] desktop:w-full laptop:h-[230px] tablet:h-[220px] flex flex-col desktop:hidden laptop:hidden">
+
+                            <div class="flex-1 flex items-center justify-center">
+                                <img src="./img/products/products/bsp/سراه.png" class="w-[130px] 2xl:w-[100px] desktop:w-[150px] laptop:w-[110px] tablet:w-[90px] object-contain">
+                            </div>
+
+                            <h3
+                                class="text-center text-white text-[28px] 2xl:text-[20px] font-YekanRegular pb-6">
+                                سراهی
+                            </h3>
+                        </div>
+
+                        <!-- Item -->
+
+                        <div class="product-item border-2 border-[#5EC9FF] rounded-[24px] h-[280px] desktop:w-full laptop:h-[230px] tablet:h-[220px] flex flex-col desktop:hidden laptop:hidden">
+
+                            <div class="flex-1 flex items-center justify-center">
+                                <img src="./img/products/products/bsp/مهره ماسوره.png" class="w-[130px] 2xl:w-[100px] desktop:w-[150px] laptop:w-[110px] tablet:w-[90px] object-contain">
+                            </div>
+
+                            <h3
+                                class="text-center text-white text-[28px] 2xl:text-[20px] font-YekanRegular pb-6">
+                                مهره ماسوره
+                            </h3>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!-- Right Content -->
+
+                <div dir="rtl" class="w-[420px] laptop:w-[350px] tablet:w-[300px] mobile:w-full shrink-0 text-right">
+
+                    <div class="flex items-start justify-start mb-5 gap-4">
+
+                        <div class="w-[107px] h-[90px] border-2 border-[#5EC9FF] rounded-[20px] flex items-center justify-center">
+                            <img src="./img/products/products/BSP.png" class="w-[60px]">
+                        </div>
+
+                        <div class="flex flex-col w-full pt-5 gap-3">
+                            <h3 class="text-white font-YekanExtraBold text-[30px] tablet:text-[18px]">
+                                اتصالات توپی BSP
+                            </h3>
+                            <p class="text-white font-YekanRegular w-[92%] text-[17px] tablet:text-[12px] text-justify leading-[30px] mb-6">
+                                تکنولوژی پرسی و آب‌بندی سریع،
+                                راهکاری مطمئن برای اجرای سریع
+                                و ایمن سیستم‌های لوله‌کشی
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <button href="#" class="h-[60px] w-full border-2 border-[#5EC9FF] rounded-[10px] flex items-center justify-center gap-3 text-white">
+                       <p class="font-YekanLight">مشاهده کاتالوگ BSP</p>
+                       <svg class="mobile-menu-close w-7 h-7 text-blue-500">
+                            <use href="#left"></use>
+                        </svg>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <br><br><br><br><br>
+
+    <!-- Footer -->
+
+    <footer>
+        <img class="w-full" src="./img/FOOTER.png" alt="">
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/products.js"></script>
+</body>
+</html>

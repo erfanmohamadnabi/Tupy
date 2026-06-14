@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نمایندگان ما</title>
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body class="bg-bg-body">
+
+    <!-- ! $$$$$$$$$$$$$$$$$$$$$ -->
+
+    <!-- Icons -->
+
+    <svg class="hidden">
+
+        <symbol id="close" 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="30" 
+            height="30" 
+            viewBox="0 0 24 24" 
+            fill="none"
+            stroke="currentColor" 
+            stroke-width="2" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"
+        >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </symbol>
+        
+    </svg>
+
+    <!-- Popups -->
+
+    <div class="tablet:hidden">
+        <div id="popup" class="popup font-YekanRegular">
+            نقشه با موفقیت آپدیت شد
+        </div>
+    </div>
+
+    <!-- ! $$$$$$$$$$$$$$$$$$$$$ -->
+
+    <!-- Overflow -->
+
+    <div class="overflow hidden fixed w-full h-full bg-black/75 z-10 top-0"></div>
+    
+ 
+    <!-- Header -->
+
+    <header class="mt-[70px] laptop:mt-3 h-20  flex items-center justify-between">
+
+        <!-- Logo -->
+
+        <div class="logo h-full flex items-center justify-end">
+            <img class="w-44 ml-17 laptop:ml-5 laptop:w-28" src="./img/TUPY LOGO.png" alt="logo">
+        </div>
+
+        <!-- Menu bar -->
+
+        <div>
+            <div class="menu h-full flex items-center justify-end laptop:hidden">
+
+            <ul class="mr-17 flex flex-row-reverse justify-center items-center gap-[60px] child:text-[29px] child:font-YekanBold child:text-white 2xl:gap-8 2xl:child:text-2xl desktop:gap-4 desktop:child:text-[20px]">
+                <li class="active">
+                    <a href="">
+                        خانه
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        لیست نمایندگان
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        استانداردها
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        لیست قیمت
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        محصولات
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        ویدیوها
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        درباره توپی
+                    </a>
+                </li>
+            </ul>
+
+            </div>
+
+            <!-- Mobile Menu Open Btn -->
+
+            <div class="mobile-menu-btn mr-5 hidden laptop:block"></div>
+        </div>
+
+        <!-- Mobile Menu bar -->
+
+        <div class="mobile-menu transition-all bg-bg-body px-5">
+
+            <div class="h-20 flex justify-between items-center">
+                <div class="w-[90%] h-full flex items-center justify-start">
+                    <img class="w-28" src="./img/TUPY LOGO.png" alt="">
+                </div>
+                <div>
+                    <svg class="mobile-menu-close w-7 h-7 text-white">
+                        <use href="#close"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <ul class="flex items-center justify-center flex-col text-white font-YekanRegular w-full">
+    
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">خانه</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">لیست نمایندگان</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">استانداردها</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">لیست قیمت</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">محصولات</a>
+                    </li>
+
+                    <li class="w-full text-center border-b border-gray-800 py-6">
+                        <a href="">ویدیوها</a>
+                    </li>
+
+                    <li class="w-full text-center py-6">
+                        <a href="">درباره توپی</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Banner -->
+
+    <section class="overflow-hidden mt-10 mb-5">
+        <div class="container mx-auto">
+
+            <div class="flex laptop:flex-col items-stretch min-h-[420px]">
+
+                <!-- Image Side -->
+
+                <div class="relative w-[45%] laptop:w-full laptop:h-[300px] mobile:h-[220px] flex-shrink-0">
+                    <img
+                    src="./img/representative/banner.png"
+                    alt="استانداردهای توپی"
+                    class="w-full h-full object-cover mobile:object-contain laptop:object-contain block"
+                    />
+                    
+                </div>
+
+                <!-- Text Side -->
+
+                <div
+                    dir="rtl"
+                    class="w-[55%] laptop:w-full py-[50px] pl-20 laptop:px-5 laptop:py-7 mobile:px-4 mobile:py-6 flex flex-col justify-center items-start text-right"
+                >
+                    <h1 class="font-YekanExtraBold text-[#6ecff6] text-[clamp(42px,5vw,70px)] leading-tight mb-6 laptop:mb-4 mobile:text-[28px]">
+                        لیست نمایندگان
+                    </h1>
+                    <p class="font-YekanRegular text-[#c8d8ea] text-[clamp(15px,1.4vw,20px)] mobile:text-[14px] leading-[2] text-justify">
+                        شبکه گسترده نمایندگان رسمی اتصالات توپی در سراسر ایران
+                        برای ارئه خدمات سریع و مطمئن    
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Map & Information -->
+
+    <section class="py-10 mobile:py-6">
+        <div class="container mx-auto px-6 mobile:px-4">
+
+            <div class="border-2 border-[#1e3a5f] tablet:border-0 rounded-3xl p-14 desktop:p-8 laptop:p-6 tablet:p-5 mobile:p-4">
+
+                <div class="flex flex-row-reverse gap-8 desktop:gap-6 laptop:gap-5 tablet:flex-col" dir="rtl">
+
+                    <!-- Map -->
+
+                    <div class="w-[45%] desktop:w-[40%] tablet:hidden flex-shrink-0 flex justify-center">
+                        <iframe id="mapFrame" class="w-full h-[490px] rounded-[10px] border-4 border-[#1c5d9f]" title="map-iframe" width="600" height="450" allowFullScreen loading="lazy" ></iframe>
+                    </div>
+
+                    <!-- Content -->
+                     
+                    <div class="flex-1 flex flex-col gap-4 min-w-0">
+
+                        <!-- Search -->
+
+                        <div class="w-[95%] tablet:w-full">
+                            <input
+                                type="text"
+                                placeholder="جستجوی نام شهر یا نمایندگی"
+                                class="w-full h-[50px] mobile:h-[44px] bg-transparent border border-[#1e3a5f] rounded-xl px-5 text-right text-white font-YekanRegular text-[14px] mobile:text-[13px] placeholder-[#4a6a8f]  focus:border-[#6ecff6] focus:border-2 outline-2 transition-colors duration-200"
+                                dir="rtl" 
+                            />
+                        </div>
+
+                        <!-- Desktop Cards -->
+
+                        <div class="flex flex-col gap-3 pr-1 tablet:hidden">
+
+
+                            <!-- Card -->
+                             
+                            <div data-src="https://neshan.org/maps/iframe/places/_bvHzDGxMgik#c35.715-51.336-15z-0p/35.7153688449263/51.33051623465565" class="map-card w-[95%] tablet:w-full border border-[#1e3a5f] rounded-xl px-4 py-4 mobile:px-3 mobile:py-3 flex items-center hover:border-[#6ecff6] transition-colors duration-200 cursor-pointer">
+
+                                <div class="flex-shrink-0 w-20 pl-4 border-l border-[#1e3a5f]">
+                                    <p class="font-YekanExtraBold text-[#6ecff6] text-[16px] mobile:text-[14px]">
+                                        خوزستان
+                                    </p>
+                                </div>
+
+                                <div class="flex-1 flex flex-col gap-1 pr-4 text-right">
+                                    <h4 class="font-YekanExtraBold text-white text-[14px] mobile:text-[13px]">
+                                        نمایندگی احمدی
+                                    </h4>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        خیابان آزادی، نبش کوچه ۱۰
+                                    </p>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        ۰۴۱-۳۳۳۳۳۳۳۳
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <!-- Card -->
+                             
+                            <div data-src="https://neshan.org/maps/iframe/places/_bAtH2OCVCZm#c38.136-46.259-15z-0p/38.13634662060508/46.25335020315694" class="map-card w-[95%] tablet:w-full border border-[#1e3a5f] rounded-xl px-4 py-4 mobile:px-3 mobile:py-3 flex items-center hover:border-[#6ecff6] transition-colors duration-200 cursor-pointer">
+
+                                <div class="flex-shrink-0 w-20 pl-4 border-l border-[#1e3a5f]">
+                                    <p class="font-YekanExtraBold text-[#6ecff6] text-[16px] mobile:text-[14px]">
+                                        اصفهان
+                                    </p>
+                                </div>
+
+                                <div class="flex-1 flex flex-col gap-1 pr-4 text-right">
+                                    <h4 class="font-YekanExtraBold text-white text-[14px] mobile:text-[13px]">
+                                        نمایندگی رضایی
+                                    </h4>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        خیابان چهارباغ عباسی، پلاک ۲۵
+                                    </p>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        ۰۳۱-۱۲۳۴۵۶۷۸
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <!-- Card -->
+                             
+                            <div data-src="https://neshan.org/maps/iframe/places/_bAINC5CJ87X#c38.148-46.223-15z-0p/38.14773036397918/46.21733873885168" class="map-card w-[95%] tablet:w-full border border-[#1e3a5f] rounded-xl px-4 py-4 mobile:px-3 mobile:py-3 flex items-center hover:border-[#6ecff6] transition-colors duration-200 cursor-pointer">
+
+                                <div class="flex-shrink-0 w-20 pl-4 border-l border-[#1e3a5f]">
+                                    <p class="font-YekanExtraBold text-[#6ecff6] text-[16px] mobile:text-[14px]">
+                                        اصفهان
+                                    </p>
+                                </div>
+
+                                <div class="flex-1 flex flex-col gap-1 pr-4 text-right">
+                                    <h4 class="font-YekanExtraBold text-white text-[14px] mobile:text-[13px]">
+                                        نمایندگی رضایی
+                                    </h4>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        خیابان چهارباغ عباسی، پلاک ۲۵
+                                    </p>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        ۰۳۱-۱۲۳۴۵۶۷۸
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <!-- Card -->
+                             
+                            <div data-src="https://neshan.org/maps/iframe/places/_bAtH2OCVCZm#c38.136-46.259-15z-0p/38.13634662060508/46.25335020315694" class="map-card w-[95%] tablet:w-full border border-[#1e3a5f] rounded-xl px-4 py-4 mobile:px-3 mobile:py-3 flex items-center hover:border-[#6ecff6] transition-colors duration-200 cursor-pointer">
+
+                                <div class="flex-shrink-0 w-20 pl-4 border-l border-[#1e3a5f]">
+                                    <p class="font-YekanExtraBold text-[#6ecff6] text-[16px] mobile:text-[14px]">
+                                        اصفهان
+                                    </p>
+                                </div>
+
+                                <div class="flex-1 flex flex-col gap-1 pr-4 text-right">
+                                    <h4 class="font-YekanExtraBold text-white text-[14px] mobile:text-[13px]">
+                                        نمایندگی رضایی
+                                    </h4>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        خیابان چهارباغ عباسی، پلاک ۲۵
+                                    </p>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        ۰۳۱-۱۲۳۴۵۶۷۸
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <!-- Mobile -->
+
+                        <div class="hidden flex-col gap-3 pr-1 tablet:flex">
+
+                            <!-- Card -->
+
+                            <a href="https://neshan.org/maps/iframe/places/_bAtH2OCVCZm#c38.136-46.259-15z-0p/38.13634662060508/46.25335020315694"  class="w-[95%] tablet:w-full border border-[#1e3a5f] rounded-xl px-4 py-4 mobile:px-3 mobile:py-3 flex items-center hover:border-[#6ecff6] transition-colors duration-200 cursor-pointer">
+
+                                <div class="flex-shrink-0 w-20 pl-4 border-l border-[#1e3a5f]">
+                                    <p class="font-YekanExtraBold text-[#6ecff6] text-[16px] mobile:text-[14px]">
+                                        اصفهان
+                                    </p>
+                                </div>
+
+                                <div class="flex-1 flex flex-col gap-1 pr-4 text-right">
+                                    <h4 class="font-YekanExtraBold text-white text-[14px] mobile:text-[13px]">
+                                        نمایندگی رضایی
+                                    </h4>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        خیابان چهارباغ عباسی، پلاک ۲۵
+                                    </p>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        ۰۳۱-۱۲۳۴۵۶۷۸
+                                    </p>
+                                </div>
+
+                            </a>
+
+                            <!-- Card -->
+
+                            <a href="https://neshan.org/maps/iframe/places/_bAtH2OCVCZm#c38.136-46.259-15z-0p/38.13634662060508/46.25335020315694"  class="w-[95%] tablet:w-full border border-[#1e3a5f] rounded-xl px-4 py-4 mobile:px-3 mobile:py-3 flex items-center hover:border-[#6ecff6] transition-colors duration-200 cursor-pointer">
+
+                                <div class="flex-shrink-0 w-20 pl-4 border-l border-[#1e3a5f]">
+                                    <p class="font-YekanExtraBold text-[#6ecff6] text-[16px] mobile:text-[14px]">
+                                        اصفهان
+                                    </p>
+                                </div>
+
+                                <div class="flex-1 flex flex-col gap-1 pr-4 text-right">
+                                    <h4 class="font-YekanExtraBold text-white text-[14px] mobile:text-[13px]">
+                                        نمایندگی رضایی
+                                    </h4>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        خیابان چهارباغ عباسی، پلاک ۲۵
+                                    </p>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        ۰۳۱-۱۲۳۴۵۶۷۸
+                                    </p>
+                                </div>
+
+                            </a>
+
+                            <!-- Card -->
+
+                            <a href="https://neshan.org/maps/iframe/places/_bAtH2OCVCZm#c38.136-46.259-15z-0p/38.13634662060508/46.25335020315694"  class="w-[95%] tablet:w-full border border-[#1e3a5f] rounded-xl px-4 py-4 mobile:px-3 mobile:py-3 flex items-center hover:border-[#6ecff6] transition-colors duration-200 cursor-pointer">
+
+                                <div class="flex-shrink-0 w-20 pl-4 border-l border-[#1e3a5f]">
+                                    <p class="font-YekanExtraBold text-[#6ecff6] text-[16px] mobile:text-[14px]">
+                                        اصفهان
+                                    </p>
+                                </div>
+
+                                <div class="flex-1 flex flex-col gap-1 pr-4 text-right">
+                                    <h4 class="font-YekanExtraBold text-white text-[14px] mobile:text-[13px]">
+                                        نمایندگی رضایی
+                                    </h4>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        خیابان چهارباغ عباسی، پلاک ۲۵
+                                    </p>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        ۰۳۱-۱۲۳۴۵۶۷۸
+                                    </p>
+                                </div>
+
+                            </a>
+
+                            <!-- Card -->
+
+                            <a href="https://neshan.org/maps/iframe/places/_bAtH2OCVCZm#c38.136-46.259-15z-0p/38.13634662060508/46.25335020315694"  class="w-[95%] tablet:w-full border border-[#1e3a5f] rounded-xl px-4 py-4 mobile:px-3 mobile:py-3 flex items-center hover:border-[#6ecff6] transition-colors duration-200 cursor-pointer">
+
+                                <div class="flex-shrink-0 w-20 pl-4 border-l border-[#1e3a5f]">
+                                    <p class="font-YekanExtraBold text-[#6ecff6] text-[16px] mobile:text-[14px]">
+                                        اصفهان
+                                    </p>
+                                </div>
+
+                                <div class="flex-1 flex flex-col gap-1 pr-4 text-right">
+                                    <h4 class="font-YekanExtraBold text-white text-[14px] mobile:text-[13px]">
+                                        نمایندگی رضایی
+                                    </h4>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        خیابان چهارباغ عباسی، پلاک ۲۵
+                                    </p>
+                                    <p class="font-YekanRegular text-[#a0b4c8] text-[11px] mobile:text-[10px]">
+                                        ۰۳۱-۱۲۳۴۵۶۷۸
+                                    </p>
+                                </div>
+
+                            </a>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <br><br><br><br><br>
+
+    <!-- Footer -->
+
+    <footer>
+        <img class="w-full" src="./img/FOOTER.png" alt="">
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/representative.js"></script>
+</body>
+</html>
